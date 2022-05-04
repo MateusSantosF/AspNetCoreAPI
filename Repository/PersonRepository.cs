@@ -30,10 +30,15 @@ namespace Learn.Repository{
         }
 
         public Person Update(Person person)
-        {
-            _context.Update(person);
-            _context.SaveChanges();
-            return person;
+        {   
+            var result = _context.Persons.SingleOrDefault( p => p.id.Equals(person.id));
+            if(result != null){
+                _context.Entry(result).CurrentValues.SetValues(person);
+                _context.SaveChanges();
+                return result;
+            }
+            return new Person();
+          
         }
     }
 }

@@ -17,7 +17,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<IPersonRepository, PersonRepository>();
 builder.Services.AddTransient<IPersonBusiness, PersonBusiness>();
 
-string conn = "Server=localhost;Database=LEARN;User=root;Password=xxxx;";
+string conn = "Server=localhost;Database=LEARN;User=root;Password=XXXXX;";
 builder.Services.AddDbContext<MySqlContext>( options => options.UseMySql(conn, 
                                             ServerVersion.AutoDetect(conn)));
 

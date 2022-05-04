@@ -26,9 +26,21 @@ public class PersonController : ControllerBase
 
     }
 
+    [HttpGet]
+    [Route("{id}")]
+    public IActionResult ListById(long id){
+        return Ok(_person.ListById(id));
+    }
+
     [HttpPost]
     public IActionResult Create([FromBody] Person person){
-           if(person == null)return BadRequest();
+        if(person == null)return BadRequest();
         return Ok(_person.Create(person));
+    }
+
+    [HttpPut]
+    public IActionResult Update([FromBody] Person person){
+        if(person == null)return BadRequest();
+        return Ok(_person.Update(person));
     }
 }
