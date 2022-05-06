@@ -2,13 +2,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Learn.Models{
 
-    [Table("PERSON")]
-    public class Person: BaseEntity{
+    [Table("BOOK")]
+    public class Book : BaseEntity{
 
-    
         [Column("FULLNAME")]
         public string fullName {get;set;}
-        [Column("AGE")]
-        public int age {get;set;}
+
+        [Column("AUTHOR")]
+        public string author {get;set;}
     }
 }

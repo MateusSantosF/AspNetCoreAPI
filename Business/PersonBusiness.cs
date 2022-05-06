@@ -6,8 +6,8 @@ namespace Learn.Business{
     public class PersonBusiness:IPersonBusiness{
 
 
-        private readonly IPersonRepository _repository;
-        public PersonBusiness(IPersonRepository personRepository){
+        private readonly IGenericRepository<Person> _repository;
+        public PersonBusiness(IGenericRepository<Person> personRepository){
 
             _repository = personRepository;
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/mateus/Documentos/ASPNET CORE/RestWithASPNET/Learn/Learn.csproj": {}
+    "/home/mateus/Documents/AspNetCoreAPI/Learn.csproj": {}
   },
   "projects": {
-    "/home/mateus/Documentos/ASPNET CORE/RestWithASPNET/Learn/Learn.csproj": {
+    "/home/mateus/Documents/AspNetCoreAPI/Learn.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/mateus/Documentos/ASPNET CORE/RestWithASPNET/Learn/Learn.csproj",
+        "projectUniqueName": "/home/mateus/Documents/AspNetCoreAPI/Learn.csproj",
         "projectName": "Learn",
-        "projectPath": "/home/mateus/Documentos/ASPNET CORE/RestWithASPNET/Learn/Learn.csproj",
+        "projectPath": "/home/mateus/Documents/AspNetCoreAPI/Learn.csproj",
         "packagesPath": "/home/mateus/.nuget/packages/",
-        "outputPath": "/home/mateus/Documentos/ASPNET CORE/RestWithASPNET/Learn/obj/",
+        "outputPath": "/home/mateus/Documents/AspNetCoreAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/mateus/.nuget/NuGet/NuGet.Config"

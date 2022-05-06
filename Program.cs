@@ -14,10 +14,9 @@ builder.Services.AddSwaggerGen();
 
 //Dependenciais
 
-builder.Services.AddTransient<IPersonRepository, PersonRepository>();
-builder.Services.AddTransient<IPersonBusiness, PersonBusiness>();
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
-string conn = "Server=localhost;Database=LEARN;User=root;Password=XXXXX;";
+string conn = "Server=localhost;Database=LEARN;User=root;Password=40028922;";
 builder.Services.AddDbContext<MySqlContext>( options => options.UseMySql(conn, 
                                             ServerVersion.AutoDetect(conn)));
 
